@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 
 # Java
 RUN export TERM=dumb ; export DEBIAN_FRONTEND=noninteractive ; apt-get update && apt-get install -y \
-    openjdk-21-jdk=21.0.6+7-1~24.04.1 \
+    openjdk-25-jdk=25.0.1+8-1~24.04 \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Extra applications
